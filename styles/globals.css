@@ -163,3 +163,10 @@ h3 {
 .carousel .carousel-status {
   display: none;
 }
+.textLink {
+  transition: 0.3s;
+  font-weight: bold;
+}
+.textLink:hover {
+  color: #27a3d8;
+}

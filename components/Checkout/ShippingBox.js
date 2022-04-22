@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "../../styles/Checkout/CheckoutForm/ShippingBox.module.css";
 
@@ -14,6 +15,7 @@ export default function ShippingBox({
     handleShippingUpdate(id, price);
     handleValidation(type);
   };
+  console.log(shippingOptions);
   return (
     <div className={styles.shippingBox}>
       {shippingOptions.length > 0 ? (
@@ -42,8 +44,25 @@ export default function ShippingBox({
                 : styles.shippingBoxCard
             }
           >
-            <p style={{ marginBottom: "10px" }}>{item.description}</p>
-            <h3>{item.price}</h3>
+            {" "}
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div style={{ margin: "auto 0" }}>
+                <p style={{ marginBottom: "10px" }}>{item.description}</p>
+
+                <h3 style={{ margin: "auto 0" }}>{item.price}</h3>
+              </div>
+              {item.id === "ship_RyWOwmXW6lnEa2" ? (
+                <Link href="https://goo.gl/maps/xaQuRGYbWdk5oxKj8">
+                  <a target="_blank" style={{ margin: "auto 0" }}>
+                    <div>
+                      <p className="textLink">Ver úbicacion</p>
+                    </div>
+                  </a>
+                </Link>
+              ) : (
+                ""
+              )}
+            </div>
           </div>
         ))}
       {valid[type] === false || (!valid[type] && submitFail) ? (
