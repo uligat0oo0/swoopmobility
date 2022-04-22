@@ -1,0 +1,41 @@
+.cart {
+  width: 400px;
+  height: 100%;
+  background: rgb(26, 28, 32);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 101;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.25);
+  padding: 40px;
+}
+
+.cart .title {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0;
+}
+.cart .title h3 {
+  color: white;
+  margin: auto 0;
+}
+.closeIcon {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closeIcon:hover {
+  color: #27a3d8;
+}
+@media all and (max-width: 768px) {
+  .cart {
+    width: 100%;
+    padding: 15px;
+  }
+  .closeIcon {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(26, 28, 32);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.primaryButton {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background: #27a3d8;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInUp;
+}
+
+.primaryButton.locked {
+  cursor: not-allowed;
+  background: #1b7196;
+}
+
+.primaryButton:hover {
+  background: #1b7196;
+}
+
+.secondaryButton {
+  padding: 15px 30px;
+  border: none;
+  border: 2px white solid;
+  border-radius: 15px;
+  color: white;
+  background: none;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInUp;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.secondaryButton:hover {
+  background: #1b7196;
+}
+.altButton {
+  margin: none;
+  padding: none;
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+small {
+  font-size: 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 90px;
+}
+
+p {
+  margin: 0;
+  color: lightgray;
+}
+h2 {
+  font-size: 42px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: -20px;
+  width: 15px;
+  height: 15px;
+  margin: 8px 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+.carousel .thumbs-wrapper {
+  display: none;
+}
+.carousel .carousel-status {
+  display: none;
+}

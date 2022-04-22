@@ -1,0 +1,17 @@
+.features {
+  background: rgb(26, 28, 32);
+  position: relative;
+  z-index: 3;
+}
+.features h2 {
+  color: #27a3d8;
+}
+.featuresContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 768px) {
+  .features h2 {
+    text-align: center;
+  }
+}

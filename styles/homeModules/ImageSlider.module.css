@@ -1,0 +1,53 @@
+.imageSlider {
+  position: relative;
+  transition: 0.5s;
+  background: black;
+  width: 100%;
+  height: 600px;
+  filter: drop-shadow(0 0 100px #27a3d86e);
+  background-size: cover;
+  background-position: center;
+}
+.imageSlider img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  left: 0;
+}
+.imageSlider .leftArrowBox {
+  position: absolute;
+  width: 80px;
+  height: 100vh;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.imageSlider .rightArrowBox {
+  position: absolute;
+  width: 80px;
+  height: 100vh;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.imageSlider .arrowCircle {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #eee;
+}
+.imageSlider .arrowIcon {
+  margin: auto;
+  color: black;
+}

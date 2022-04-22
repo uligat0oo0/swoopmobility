@@ -1,0 +1,60 @@
+.orderTotal {
+  padding: 15px 30px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  margin: 0 10px;
+  margin-top: 30px;
+}
+.orderTotal .row {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.orderTotal .row p {
+  color: black;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.orderTotal .line {
+  height: 1px;
+  width: 100%;
+  background: lightgrey;
+}
+.orderTotal .label {
+  font-weight: bold;
+}
+
+.orderTotal .totalRow {
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.orderTotal .totalRow P {
+  color: black;
+  margin: 10px 0;
+}
+
+.orderTotal .totalRow .totalPrice {
+  font-weight: bold;
+}
+
+.orderTotal .loadingSubtotal {
+  height: 14px;
+  background: lightgray;
+  width: 100px;
+  border-radius: 2px;
+}
+.orderTotal .loadingShipping {
+  height: 14px;
+  background: lightgray;
+  width: 100px;
+  border-radius: 2px;
+}
+.orderTotal .loadingTotal {
+  height: 14px;
+  background: lightgray;
+  width: 100px;
+  border-radius: 2px;
+}

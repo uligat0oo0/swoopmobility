@@ -1,0 +1,63 @@
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.shippingBox {
+  width: 100%;
+  margin: 0 10px;
+}
+.shippingBoxCard {
+  background: #f0f0f0;
+  border-radius: 15px;
+  padding: 30px;
+  height: 130px;
+  width: 100%;
+  margin: 20px 0;
+  transition: 0.3s;
+  border: 2px #f0f0f0 solid;
+  cursor: pointer;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInDown;
+}
+.shippingBoxCard p,
+.shippingBoxCardSelected p {
+  color: grey;
+}
+.shippingBoxCard:hover {
+  border: 2px rgb(209, 209, 209) solid;
+}
+.shippingBox .errorMessage {
+  color: rgb(231, 71, 71);
+  font-size: 12px;
+  margin: 20px 0 10px 10px;
+  transform: translateY(-10px);
+}
+
+.shippingBoxCardSelected {
+  background: #f0f0f0;
+  border-radius: 15px;
+  height: 130px;
+  padding: 30px;
+  width: 100%;
+  margin: 20px 0;
+  transition: 0.3s;
+  border: 2px #27a3d8 solid;
+}
+
+@media all and (max-width: 768px) {
+  .shippingBoxCard {
+    height: 130px;
+  }
+  .shippingBoxCardSelected {
+    height: 130px;
+  }
+}

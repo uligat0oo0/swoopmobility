@@ -1,0 +1,46 @@
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+}
+.selectContainer select {
+  border: lightgray 1px solid;
+  border-radius: 8px;
+  padding: 15px 10px;
+  margin: 15px 10px;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+
+.selectContainer label {
+  position: absolute;
+  margin: 0 20px;
+  transform: translatey(9px);
+  background-color: white;
+  color: grey;
+  padding: 0;
+  font-size: 12px;
+  padding: 0px 10px;
+}
+.selectContainer select:focus {
+  border: #27a3d8 1px solid;
+}
+.selectContainer select:hover {
+  border: #27a3d8 1px solid;
+}
+.selectContainer .errorMessage {
+  color: rgb(231, 71, 71);
+  font-size: 12px;
+  margin: 0 0 10px 10px;
+  transform: translateY(-10px);
+}
+
+@media all and (max-width: 768px) {
+  .selectContainer {
+    width: 100% !important;
+  }
+  .selectContainer select {
+    -webkit-appearance: none;
+  }
+}

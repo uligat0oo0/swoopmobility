@@ -1,0 +1,79 @@
+.orderConfirmation {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 0 0;
+  justify-content: center;
+  align-content: center;
+}
+.orderConfirmation .textContainer {
+  text-align: center;
+}
+.orderConfirmation .textContainer p {
+  color: black;
+}
+.orderConfirmation p {
+  color: black;
+  margin: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.orderConfirmation small {
+  margin: 0 20px;
+}
+.orderConfirmation .checkIcon {
+  color: yellowgreen;
+  font-size: 60px;
+  margin: auto;
+}
+.orderConfirmation h2 {
+  text-align: center;
+}
+.orderConfirmation h3 {
+  margin: 15px 0;
+  color: #27a3d8;
+  font-size: 18px;
+  text-align: center;
+}
+
+.orderConfirmation .transactions i {
+  font-size: 14px;
+  color: #27a3d8;
+}
+
+.orderTotal {
+  margin: 10px 20px;
+}
+.orderTotal .row {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.orderTotal .row p {
+  color: black;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.orderTotal .line {
+  height: 1px;
+  width: 100%;
+  background: lightgrey;
+}
+.orderTotal .label {
+  font-weight: bold;
+}
+
+.orderTotal .totalRow {
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.orderTotal .totalRow P {
+  color: black;
+  margin: 10px 0;
+}
+
+.orderTotal .totalRow .totalPrice {
+  font-weight: bold;
+}

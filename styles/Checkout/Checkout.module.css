@@ -1,0 +1,18 @@
+.checkout {
+}
+.checkout .container {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  overflow: visible;
+  max-width: 100%;
+  position: relative;
+}
+.checkout .spacer {
+  height: 90px;
+  width: 100%;
+  background: rgb(26, 28, 32);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}

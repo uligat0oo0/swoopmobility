@@ -1,0 +1,41 @@
+.checkoutBar {
+  position: relative;
+  width: 50%;
+  padding: 0 60px 100px 60px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.25);
+  z-index: 10;
+  background: white;
+  margin: 30px;
+  border-radius: 20px;
+}
+.checkoutBar small {
+  color: grey;
+}
+.checkoutBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.checkoutBar ul li {
+  margin-top: 15px;
+}
+
+.checkoutBar button {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.checkoutBar .priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.checkoutBar h2 {
+  margin: 30px 0;
+  font-size: 30px;
+}
+@media all and (max-width: 768px) {
+  .checkoutBar {
+    width: 100%;
+    padding: 0 15px 100px 15px;
+  }
+}

@@ -1,0 +1,110 @@
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero {
+  position: sticky;
+  transition: 0.5s;
+  z-index: 0;
+  top: 0;
+}
+.hero h1 {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.hero .container {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/posterBlur.webp);
+  background-size: cover;
+}
+
+.hero .container .imgContainer {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  backdrop-filter: blur(60px);
+}
+.hero .container .imgContainer video {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 10;
+}
+.hero .textContainer {
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  padding: 10%;
+  transform-origin: 0 0;
+}
+.hero .textContainer h1 {
+  color: #27a3d8;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInUp;
+}
+.hero .textContainer h2 {
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInUp;
+}
+.hero .textContainer .buttonContainer {
+  display: flex;
+  margin: 60px 0;
+}
+.hero .textContainer .buttonContainer button {
+  margin: 0 10px 0px 0px;
+}
+@media all and (max-width: 768px) {
+  .hero .textContainer {
+    padding: 0 5%;
+  }
+  .hero .textContainer h2 {
+    font-size: 30px;
+  }
+  .hero .textContainer .buttonContainer button {
+    margin: 0 5px 0px 5px;
+  }
+}

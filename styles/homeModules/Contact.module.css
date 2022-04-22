@@ -1,0 +1,71 @@
+.contact {
+  width: 100%;
+  background: rgb(26, 28, 32);
+  position: relative;
+  z-index: 4;
+  padding: 0px 12%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 100px #27a3d86e;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.contact .rightColumn h2 {
+  color: #27a3d8;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.contact img {
+  width: 150px;
+}
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li p {
+  color: lightgray;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.contact ul li p:hover {
+  color: #27a3d8;
+}
+
+.contact small {
+  color: grey;
+  text-align: center;
+  margin: auto;
+  margin: 20px;
+}
+
+.contact .iconsContainer {
+  display: flex;
+}
+.contact .iconsContainer i {
+  color: lightgray;
+  transition: 0.3s;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 28px;
+}
+.contact .iconsContainer i:hover {
+  color: #27a3d8;
+}
+
+@media all and (max-width: 768px) {
+  .contact .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact .leftColumn {
+  }
+  .contact .rightColumn {
+  }
+}

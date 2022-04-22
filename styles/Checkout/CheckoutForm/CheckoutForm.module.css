@@ -1,0 +1,20 @@
+.checkoutErr {
+  color: rgb(231, 71, 71);
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.checkoutForm button i {
+  padding: 0 5px;
+}
+
+.buttonLoading {
+  width: 100%;
+  height: 45px;
+  background: lightgray;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.lockIcon {
+  margin: 0 5px;
+}

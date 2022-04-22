@@ -1,0 +1,33 @@
+.gallery {
+  width: 100%;
+  position: relative;
+}
+.gallery .container {
+  position: relative;
+  height: auto;
+}
+.gallery .galleryCard img {
+  width: 100%;
+  object-fit: cover;
+}
+.gallery .infoContainer {
+  width: 100%;
+  padding: 15px;
+}
+
+.gallery .textContainer {
+  margin: 60px 10%;
+}
+.gallery .title {
+  font-size: 30px;
+  color: white;
+}
+
+@media all and (max-width: 768px) {
+  .gallery {
+    width: 100%;
+  }
+  .gallery .title {
+    font-size: 20px;
+  }
+}
