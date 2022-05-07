@@ -4,7 +4,6 @@ import { FaCheckCircle } from "react-icons/fa";
 import styles from "../../styles/Checkout/OrderConfirmation.module.css";
 import ProductSummaryCard from "./ProductSummaryCard";
 export default function OrderConfirmation({ order }) {
-  console.log(order);
 
   const total = order ? order.order_value.raw : "";
   const subtotal = order ? order.order.subtotal.raw : "";
