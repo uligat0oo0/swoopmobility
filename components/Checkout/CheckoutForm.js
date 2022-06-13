@@ -283,9 +283,6 @@ export default function CheckoutForm({ checkoutToken, handleOrder }) {
         ""
       )}
       <p className={styles.checkoutErr}>{stripeErrorMessage}</p>
-      <p style={{ marginTop: "30px" }}>
-        Powered by <b>tectify.io</b>
-      </p>
     </div>
   );
 }

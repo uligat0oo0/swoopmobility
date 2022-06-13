@@ -15,7 +15,7 @@ export default function ShippingBox({
     handleShippingUpdate(id, price);
     handleValidation(type);
   };
-  s;
+
   return (
     <div className={styles.shippingBox}>
       {shippingOptions.length > 0 ? (
